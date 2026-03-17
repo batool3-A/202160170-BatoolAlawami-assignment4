@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Batool Alawami Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body id="name_info">
+<!-- this is the navigation part -->
+<nav class="navbar">
+    <ul>
+        <li><a href="#about_me">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#project">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+<header>
+    <img src="assets/images/personalPic.jpg" alt="Personal picture">
+    <section class="info">
+      <h1>Batool Alawami</h1>
+      <h3>Software Engineering Student at KFUPM</h3>
+    </section>
+    <button id="theme-toggle">🌙</button>
+</header>
+
+<!-- each part in different section -->
+<section id="about_me">
+    <h2>About Me</h2>
+
+    <p>
+        I’m Batool Alawami, a Software Engineering student at King Fahd
+        University of Petroleum & Minerals (KFUPM), passionate about
+        building modern, secure, and user-centered digital solutions.
+    </p>
+
+    <p>
+        My interests include Web Development, Cybersecurity, and UI/UX Design,
+        where I focus on creating systems that combine functionality,
+        protection, and seamless interaction.
+    </p>
+
+    <p>
+        I enjoy developing business systems and smart applications that
+        improve productivity and efficiency. My goal is to grow as a
+        Full-Stack Developer and contribute to building scalable and
+        impactful software solutions.
+    </p>
+
+    <p class="tagline">
+        Building smart, secure, and user-focused digital solutions.
+    </p>
+
+</section>
+
+<section id="skills">
+    <h2>My Skills</h2>
+    <p>Technical skills</p>
+    <ul>
+        <li>Java-fx/swing/script</li>
+        <li>python</li>
+        <li>My SQL</li>
+        <li>HTML/CSS</li>
+    </ul>
+    <p>Soft skills</p>
+    <ul>
+        <li>Team Work</li>
+        <li>Time management</li>
+        <li>work under pressure </li>
+        <li>flexibility</li>
+    </ul>
+
+</section>
+<section id="project">
+    <h2>My Projects </h2>
+    <ol>
+        <li><h4 class="horse"><b>Horse Management Database System</b><span class="arrow">▼</span></h4>
+            <div class="horseManagement">
+            <p>
+                Designed and implemented a relational database system to manage horse
+                records, ownership details, training information, and event participation.
+                The system supports efficient data storage, retrieval, and reporting using
+                SQL queries. Developed normalized tables, relationships, and complex queries
+                to ensure data integrity and operational efficiency.
+            </p>
+            <img src="assets/images/HorseDB.png" alt="Horse Database Project">
+            <img src="assets/images/HorseDb2.png" alt="Horse Database Project-Admin page">
+            </div>
+        </li>
+        <li><h4 class="folder"><b>Folder Management Tool</b><span class="arrow">▼</span></h4>
+            <div class="folderManagement">
+            <p>
+                Developed a hierarchical folder management application applying software design
+                principles in a real-world scenario. Implemented tree structures to model directory
+                relationships and integrated bar chart visualizations to present folder statistics
+                and system insights.
+            </p>
+            <img src="assets/images/FolderSystem.png" alt="Folder Management Project">
+            </div>
+        </li>
+    </ol>
+</section>
+<section id="contact">
+
+    <h2>Contact</h2>
+
+    <div class="contact-container">
+        <form id="contactForm">
+
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Batool Alawami" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="alawami.batool3@gmail.com" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Send me a message..." rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+
+            <p id="confirmationMessage" class="hidden">
+                Message sent successfully ✔
+            </p>
+
+        </form>
+
+
+
+    </div>
+</section>
+<script src="js/script.js"></script>
+<script src="js/showProject.js"></script>
+<script src="js/contactForm.js"></script>
+</body>
+
+</html>
