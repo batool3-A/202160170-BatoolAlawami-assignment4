@@ -1,41 +1,40 @@
-# Technical Documentation — Assignment 1
+# Technical Documentation — Assignment 3
 
 ## 1️⃣ Project Overview
 
-This project is a responsive personal portfolio website developed using HTML, CSS, and JavaScript. It represents the initial foundation of my professional portfolio and highlights my background, technical skills, projects, and contact information.
+This project is a responsive personal portfolio website developed using HTML, CSS, and JavaScript. It represents the foundation of my professional portfolio and showcases my background, skills, projects, and contact information.
 
-The website focuses on clean layout design, user-friendly navigation, responsive behavior, and basic interactivity features.
+The website emphasizes clean design, user-friendly navigation, responsive behavior, and interactive features such as API integration, state management, dynamic content updates, and enhanced user experience.
 
 ---
 
 ## 2️⃣ Project Structure
 
-The project follows an organized folder structure to separate structure, styling, functionality, and documentation.
+The project follows a modular folder structure to separate concerns between structure, styling, functionality, and documentation.
 
-```
-assignment-1/
+assignment-swe363/
 ├── index.html
-├── README.md
 ├── css/
 │   └── styles.css
 ├── js/
-│   └── script.js
+│   ├── script.js
+│   ├── contactForm.js
+│   ├── showProject.js
+│   └── Quote.js
 ├── assets/
 │   └── images/
-│       ├── FolderSystem.png
-│       ├── HorseDB.png
-│       ├── HorseDb2.png
-│       └── personalPic.jpg
 ├── docs/
 │   ├── ai-usage-report.md
 │   └── technical-documentation.md
-```
 
 ### File Responsibilities
 
 * **index.html** → Contains the website structure and content sections.
-* **styles.css** → Controls layout, colors, responsiveness, and theme styling.
-* **script.js** → Implements interactivity and dynamic behaviors.
+* **styles.css** → Controls layout, colors, responsiveness, and theme styling using CSS variables.
+* **script.js** → Implements general interactivity such as navigation highlighting and theme toggle with localStorage.
+* **contactForm.js** → Handles form validation logic and user feedback.
+* **showProject.js** → Controls expand/collapse functionality for project details.
+* **Quote.js** → Handles API integration and dynamic quote display.
 * **assets/images** → Stores all project and profile images.
 * **docs** → Contains AI documentation and technical explanations.
 
@@ -43,175 +42,111 @@ assignment-1/
 
 ## 3️⃣ Website Sections
 
-The portfolio includes the following sections:
-
 ### About Me
-
 Provides a personal introduction, academic background, career interests, and a personal tagline.
 
 ### Skills
-
 Divided into:
-
 * Technical skills
 * Soft skills
 
 ### Projects
-
-Includes at least two projects with:
-
+Includes projects with:
 * Title
 * Description
 * Images
+* Expand/collapse interaction
 
 ### Contact
-
 A contact form including:
-
 * Name
 * Email
 * Message
 
-Form validation is handled using built-in HTML attributes.
+Enhanced with custom validation logic and user feedback messages.
 
 ---
 
 ## 4️⃣ Features Implementation
 
 ### Fixed Navigation Bar
-
-The navigation bar is fixed at the top using:
-
-```css
 position: fixed;
-```
-
-This ensures constant visibility while scrolling.
-
----
 
 ### Smooth Scrolling
-
-Implemented using CSS:
-
-```css
 scroll-behavior: smooth;
-```
-
-This enhances navigation experience between sections.
-
----
 
 ### Active Section Highlight
+JavaScript detects the visible section and updates the active navigation link dynamically.
 
-JavaScript detects the visible section during scrolling and dynamically applies the `active` class to the corresponding navigation link.
+### API Integration (Dynamic Quotes)
+- Uses fetch() to retrieve data
+- Displays quotes dynamically
+- Handles errors with user-friendly messages
 
-Key logic includes:
+### Complex Logic (Form Validation)
+- Checks empty fields
+- Validates email format
+- Checks message length
+- Displays feedback messages
 
-* Detecting section position
-* Comparing viewport offset
-* Updating navigation state
+### State Management (Dark Mode)
+- Toggle button
+- dark-mode class
+- localStorage to save preference
+- Persists after refresh
 
----
-
-### Dark / Light Theme Toggle
-
-A theme toggle button switches between light and dark modes.
-
-Implementation approach:
-
-* JavaScript toggles a `dark-mode` class on `<body>`.
-* CSS applies override color styles.
-* Button icon changes dynamically (🌙 / ☀️).
-
----
-
-### Contact Form
-
-The contact form structure includes input validation using:
-
-```html
-required
-type="email"
-```
-
-No backend functionality is implemented as it is outside assignment scope.
+### Show/Hide Project Details
+- Click to expand/collapse
+- Dynamic arrow update
 
 ---
 
 ## 5️⃣ Design & Styling
 
-The visual design follows a soft purple color palette aligned with personal branding.
-
-Styling includes:
-
-* Hover effects
-* Active navigation indicators
-* Rounded form elements
-* Section separators
-
-Flexbox is used for layout alignment in:
-
-* Navigation bar
-* Header
-* Contact section
+- CSS variables (:root)
+- Flexbox layout
+- Hover effects
+- Card-style components
+- Smooth transitions
+- Removed !important for cleaner code
 
 ---
 
 ## 6️⃣ Responsiveness
 
-Responsive design is implemented using media queries targeting:
+- Tablets
+- Mobile devices
+- Small screens
 
-* Tablets
-* Mobile devices
-* Small screens
-
-Adjustments include:
-
-* Image resizing
-* Spacing reduction
-* Text scaling
-* Form width adaptation
-
-The design maintains layout consistency while improving screen adaptability.
+Adjustments include image resizing, flexible layout, and spacing improvements.
 
 ---
 
-## 7️⃣ Challenges & Solutions
+## 7️⃣ Performance Optimization
 
-### Navbar Overlapping Sections
+- Image optimization
+- Clean CSS structure
+- Avoid unnecessary selectors
+- Modular JavaScript files
 
-Because the navbar is fixed, it overlapped section headers.
+---
 
-**Solution:**
-Offset adjustments were applied in JavaScript using:
+## 8️⃣ Challenges & Solutions
 
-```js
+Navbar overlap:
 section.offsetTop - 120;
-```
+
+Dark mode conflicts:
+Solved using CSS variables instead of !important
+
+API issues:
+Used stable API with error handling
+
+Form validation complexity:
+Implemented step-by-step logic
 
 ---
 
-### Dark Mode Styling Conflicts
+## 9️⃣ Conclusion
 
-Some elements did not initially adapt to dark mode.
-
-**Solution:**
-CSS override selectors were implemented to ensure consistent theme application.
-
----
-
-### Maintaining Design While Responsive
-
-Making the layout responsive without altering the original design required careful adjustments.
-
-**Solution:**
-Non-destructive media queries were used to resize and adapt elements without restructuring layout.
-
----
-
-## 8️⃣ Conclusion
-
-This project demonstrates the integration of structure (HTML), styling (CSS), and interactivity (JavaScript) to create a responsive and user-friendly personal portfolio website.
-
-It establishes a scalable technical foundation for future portfolio expansion and feature development.
+This project demonstrates building a responsive and interactive portfolio using HTML, CSS, and JavaScript, including API integration, state management, and performance optimization.

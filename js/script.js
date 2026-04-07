@@ -30,14 +30,29 @@ window.addEventListener("scroll", () => {
 /* Theme toggle
    Switches Light / Dark mode
 */
-const btn = document.getElementById("theme-toggle");
-/* Toggle theme on click */
-btn.addEventListener("click", () => {
-  document.body.classList.toggle("dark-mode");
-/* Change icon based on mode */
-  if (document.body.classList.contains("dark-mode")) {
-    btn.textContent = "☀️";
+document.addEventListener("DOMContentLoaded", function () {
+
+  const btn = document.getElementById("theme-toggle");
+
+  // تحميل الحالة
+  if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark-mode");
+    btn.textContent = "☀️"; // شمس
   } else {
-    btn.textContent = "🌙";
+    btn.textContent = "🌙"; // قمر
   }
+
+  btn.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+
+    // حفظ الحالة + تغيير الإيموجي
+    if (document.body.classList.contains("dark-mode")) {
+      localStorage.setItem("theme", "dark");
+      btn.textContent = "☀️";
+    } else {
+      localStorage.setItem("theme", "light");
+      btn.textContent = "🌙";
+    }
+  });
+
 });

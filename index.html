@@ -28,6 +28,12 @@
 </header>
 
 <!-- each part in different section -->
+<section id="quote">
+    <div class="quoteContent">
+        <p id="quoteText">Loading Inspiration✨</p>
+        <button id="newQuoteBtn">New Inspiration✨</button>
+    </div>
+</section>
 <section id="about_me">
     <h2>About Me</h2>
 
@@ -55,6 +61,7 @@
     </p>
 
 </section>
+
 
 <section id="skills">
     <h2>My Skills</h2>
@@ -108,10 +115,12 @@
     <h2>Contact</h2>
 
     <div class="contact-container">
+        <!--
         <form id="contactForm">
 
             <label for="name">Name</label>
             <input type="text" id="name" name="name" placeholder="Batool Alawami" required>
+            <small class="error"></small>
 
             <label for="email">Email</label>
             <input type="email" id="email" name="email" placeholder="alawami.batool3@gmail.com" required>
@@ -126,7 +135,33 @@
             </p>
 
         </form>
+-->
+        <form id="contactForm">
 
+            <!-- Name -->
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+            <small class="error" id="nameError"></small>
+
+            <!-- Email -->
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+            <small class="error" id="emailError"></small>
+
+            <!-- Message -->
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Send me a message..." rows="5"></textarea>
+            <small class="error" id="messageError"></small>
+
+            <!-- Button -->
+            <button type="submit">Send Message</button>
+
+            <!-- Success Message -->
+            <p id="confirmationMessage" style="display:none;">
+                Message sent successfully ✔
+            </p>
+
+        </form>
 
 
     </div>
@@ -134,6 +169,7 @@
 <script src="js/script.js"></script>
 <script src="js/showProject.js"></script>
 <script src="js/contactForm.js"></script>
+<script src="js/Quote.js"></script>
 </body>
 
 </html>

@@ -1,4 +1,4 @@
-# Personal Portfolio Website — Assignment 1
+# Personal Portfolio Website — Assignment 3
 
 ## 📌 Project Description
 
@@ -28,7 +28,7 @@ It also provided ideas to improve my portfolio design, layout, responsiveness, a
 ## 🌐 Live Deployment
 
 You can view the live portfolio website here:  
-https://batool3-a.github.io/202160170-batoolAlawami-assignment2/
+https://batool3-a.github.io/202160170-batoolAlawami-assignment3/
 
 ---
 
