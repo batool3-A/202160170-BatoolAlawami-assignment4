@@ -71,7 +71,7 @@ For full details, see:
 
 View the deployed project here:
 
-https://batool3-a.github.io/202160170-batoolAlawami-assignment4/
+https://batool3-a.github.io/202160170-BatoolAlawami-assignment4/
 
 ---
 
