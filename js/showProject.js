@@ -3,7 +3,7 @@ function setupProject(titleClass, contentClass) {
   const content = document.querySelector(contentClass);
   const arrow = title.querySelector(".arrow");
 
-  // رسالة توضيحية عند مرور الماوس
+
   title.title = "Click to view more details";
 
   title.addEventListener("click", function () {
@@ -19,6 +19,28 @@ function setupProject(titleClass, contentClass) {
     }
 
   });
+}
+function filterProjects(type){
+
+const projects =
+document.querySelectorAll(".project-item");
+
+projects.forEach(project=>{
+
+if(type==="all"){
+project.style.display="block";
+}
+
+else if(project.classList.contains(type)){
+project.style.display="block";
+}
+
+else{
+project.style.display="none";
+}
+
+});
+
 }
 
 setupProject(".horse", ".horseManagement");

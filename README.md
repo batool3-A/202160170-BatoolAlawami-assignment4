@@ -2,35 +2,82 @@
 
 ## 📌 Project Description
 
-This project is a simple responsive personal portfolio website developed using HTML, CSS, and JavaScript. It presents my background, skills, projects, and contact information as the foundation of my professional portfolio.
+This project is a responsive and interactive personal portfolio website developed using HTML, CSS, and JavaScript.
+
+It showcases my background, technical skills, projects, and contact information while demonstrating advanced front-end concepts including:
+
+- API integration for dynamic quote display
+- Complex form validation logic
+- State management using localStorage
+- Expand/collapse project interactions
+- Innovation feature through an academic/professional journey timeline
+- Responsive and user-friendly design
+
+The project serves as both a professional portfolio foundation and a demonstration of practical web development concepts.
 
 ---
 
+## ▶️ How to Run Locally
 
-## ▶️ How to Run
+1. Download or clone the repository
 
-1. Download the project
-2. Open `index.html`
-3. Run in your browser
+```bash
+git clone <repository-url>
+```
 
----
+2. Open the project folder
 
-## 🤖 Short Summary of AI Use
+3. Open:
 
-I used AI tools such as ChatGPT during this project to support my development process. AI helped me identify and fix coding errors in HTML, CSS, and JavaScript, especially while implementing features like the navigation highlight and the dark/light theme toggle.
+```bash
+index.html
+```
 
-It also provided ideas to improve my portfolio design, layout, responsiveness, and user experience. In addition, I used AI to review my work and check if it matches the assignment rubric requirements. All suggestions were reviewed, tested, and modified to ensure the final implementation reflects my own understanding and work.
-
-
-
----
-
-## 🌐 Live Deployment
-
-You can view the live portfolio website here:  
-https://batool3-a.github.io/202160170-batoolAlawami-assignment3/
+in your browser.
 
 ---
 
+## ⚙️ Features
 
+- Responsive navigation with active section highlighting
+- Dark / Light theme toggle with saved user preference
+- Dynamic quote API integration
+- Contact form with validation and feedback messages
+- Expandable project details
+- Journey timeline innovation section
+- Responsive layout across devices
 
+---
+
+## 🤖 AI Usage Summary
+
+ChatGPT was used as a support tool during development for:
+
+- Debugging HTML, CSS, and JavaScript
+- Assisting with interactive feature implementation
+- Supporting API integration and validation logic
+- Improving design, responsiveness, and user experience
+- Reviewing project compliance with assignment requirements
+
+All AI suggestions were reviewed, tested, and modified before implementation.
+
+For full details, see:
+
+- `docs/ai-usage-report.md`
+
+---
+
+## 🚀 Live Deployment
+
+View the deployed project here:
+
+https://batool3-a.github.io/202160170-batoolAlawami-assignment4/
+
+---
+
+## 🛠 Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript
+- Git & GitHub Pages

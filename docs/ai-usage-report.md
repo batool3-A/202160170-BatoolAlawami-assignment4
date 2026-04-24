@@ -18,6 +18,8 @@ During this assignment, I used the following AI tool:
 * Providing suggestions to improve layout, styling, responsiveness, and user experience.
 * Reviewing my portfolio structure to ensure it meets the assignment rubric requirements.
 * Supporting documentation writing such as README and reports.
+* Brainstorming creative features such as the My Journey timeline to strengthen innovation in the project.
+* Supporting implementation of API error handling and user-friendly fallback messages.
 
 AI was used as a support tool to guide development and problem-solving, not to replace my own work.
 
@@ -54,7 +56,7 @@ Using AI in this assignment helped me:
 * Develop debugging and problem-solving skills.
 * Learn how to critically evaluate AI-generated solutions before applying them.
 * Gain confidence in building interactive and user-friendly web applications.
-
+* Improved my ability to use AI critically as a development assistant rather than relying on it blindly.
 ---
 
 ## 4️⃣ Responsible Use & Modifications
@@ -78,9 +80,9 @@ AI was used as a supportive learning tool while maintaining academic integrity a
 AI support contributed to implementing several key features in this project, including:
 
 * Dynamic quote display using an external API.
-* Form validation with multiple conditions and user feedback.
-* Dark/light theme toggle with persistent state.
-* Interactive project sections with show/hide functionality.
-* UI/UX improvements such as hover effects, spacing adjustments, and smooth scrolling.
+* Form validation with multi-step logic.
+* Persistent dark/light mode using localStorage.
+* Expandable project sections.
+* My Journey interactive timeline as an innovation feature.
 
 These features were implemented, tested, and refined independently after receiving AI guidance.

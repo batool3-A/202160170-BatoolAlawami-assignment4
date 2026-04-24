@@ -13,6 +13,7 @@
 <nav class="navbar">
     <ul>
         <li><a href="#about_me">About Me</a></li>
+        <li><a href="#journey">Journey</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#project">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -61,7 +62,48 @@
     </p>
 
 </section>
+<section id="journey">
+    <h2>My Journey</h2>
 
+    <div class="timeline">
+
+        <div class="timeline-item">
+            <h4>2021</h4>
+            <p>
+                Started my journey at KFUPM as an Industrial Engineering student.
+            </p>
+        </div>
+
+        <div class="timeline-item">
+            <h4>2023</h4>
+            <p>
+                Began programming in Python and developed my interest in software.
+            </p>
+        </div>
+
+        <div class="timeline-item">
+            <h4>2024</h4>
+            <p>
+                Changed my major to Software Engineering and started programming in Java.
+            </p>
+        </div>
+
+        <div class="timeline-item">
+            <h4>2025</h4>
+            <p>
+                Advanced in software engineering and gained a deeper understanding of the software development lifecycle.
+            </p>
+        </div>
+
+        <div class="timeline-item">
+            <h4>2026</h4>
+            <p>
+                Beginning a new professional journey through training with SLB and gaining industry experience.
+            </p>
+        </div>
+
+    </div>
+</section>
 
 <section id="skills">
     <h2>My Skills</h2>
@@ -82,32 +124,48 @@
 
 </section>
 <section id="project">
-    <h2>My Projects </h2>
+    <h2>My Projects</h2>
+
+    <div class="project-filters">
+        <button onclick="filterProjects('all')">All</button>
+        <button onclick="filterProjects('database')">Database</button>
+        <button onclick="filterProjects('software')">Software design</button>
+    </div>
+
     <ol>
-        <li><h4 class="horse"><b>Horse Management Database System</b><span class="arrow">▼</span></h4>
+
+        <li class="project-item database">
+            <h4 class="horse">
+                <b>Horse Management Database System</b>
+                <span class="arrow">▼</span>
+            </h4>
+
             <div class="horseManagement">
-            <p>
-                Designed and implemented a relational database system to manage horse
-                records, ownership details, training information, and event participation.
-                The system supports efficient data storage, retrieval, and reporting using
-                SQL queries. Developed normalized tables, relationships, and complex queries
-                to ensure data integrity and operational efficiency.
-            </p>
-            <img src="assets/images/HorseDB.png" alt="Horse Database Project">
-            <img src="assets/images/HorseDb2.png" alt="Horse Database Project-Admin page">
+                <p>
+                    Designed and implemented a relational database system...
+                </p>
+
+                <img src="assets/images/HorseDB.png" alt="HorseDB">
+                <img src="assets/images/HorseDb2.png" alt="HorseDB 2">
             </div>
         </li>
-        <li><h4 class="folder"><b>Folder Management Tool</b><span class="arrow">▼</span></h4>
+
+
+        <li class="project-item software">
+            <h4 class="folder">
+                <b>Folder Management Tool</b>
+                <span class="arrow">▼</span>
+            </h4>
+
             <div class="folderManagement">
-            <p>
-                Developed a hierarchical folder management application applying software design
-                principles in a real-world scenario. Implemented tree structures to model directory
-                relationships and integrated bar chart visualizations to present folder statistics
-                and system insights.
-            </p>
-            <img src="assets/images/FolderSystem.png" alt="Folder Management Project">
+                <p>
+                    Developed a hierarchical folder management application...
+                </p>
+
+                <img src="assets/images/FolderSystem.png" alt="Folder system">
             </div>
         </li>
+
     </ol>
 </section>
 <section id="contact">
@@ -115,27 +173,7 @@
     <h2>Contact</h2>
 
     <div class="contact-container">
-        <!--
-        <form id="contactForm">
 
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Batool Alawami" required>
-            <small class="error"></small>
-
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="alawami.batool3@gmail.com" required>
-
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Send me a message..." rows="5" required></textarea>
-
-            <button type="submit">Send Message</button>
-
-            <p id="confirmationMessage" class="hidden">
-                Message sent successfully ✔
-            </p>
-
-        </form>
--->
         <form id="contactForm">
 
             <!-- Name -->
@@ -165,6 +203,9 @@
 
 
     </div>
+    <footer>
+        <p>© 2026 Batool Alawami. All rights reserved.</p>
+    </footer>
 </section>
 <script src="js/script.js"></script>
 <script src="js/showProject.js"></script>

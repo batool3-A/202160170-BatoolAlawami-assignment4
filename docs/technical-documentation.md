@@ -44,7 +44,10 @@ assignment-swe363/
 
 ### About Me
 Provides a personal introduction, academic background, career interests, and a personal tagline.
+### My Journey
 
+An interactive timeline section presents my academic and professional growth milestones, including major transitions, programming experience, and upcoming professional training.
+This section was added as an innovation feature to enhance storytelling and personal branding.
 ### Skills
 Divided into:
 * Technical skills
@@ -98,7 +101,14 @@ JavaScript detects the visible section and updates the active navigation link dy
 ### Show/Hide Project Details
 - Click to expand/collapse
 - Dynamic arrow update
+### Innovation Feature (Journey Timeline)
+Implemented a timeline-based section to visualize academic and technical growth.
 
+Features include:
+- Vertical milestone timeline layout
+- Custom styling using CSS
+- Personal storytelling element
+- Responsive timeline design
 ---
 
 ## 5️⃣ Design & Styling
@@ -149,4 +159,4 @@ Implemented step-by-step logic
 
 ## 9️⃣ Conclusion
 
-This project demonstrates building a responsive and interactive portfolio using HTML, CSS, and JavaScript, including API integration, state management, and performance optimization.
+This project demonstrates integrating responsive design, API integration, complex logic, state management, innovation, and performance optimization into a polished deployed web application.
